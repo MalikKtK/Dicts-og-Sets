@@ -1,0 +1,16 @@
+# Dictionary of students and their grades
+student_grades = {
+    'Malik': 90,
+    'Haci': 75,
+    'Mark': 88,
+    'Ebubekir': 92,
+    'Daniel': 78
+}
+
+# Update grades of specific students
+student_grades['Haci'] = 85
+student_grades['Daniel'] = 95
+
+# Prints out the names of all students who have a grade higher than 85
+high_grades_students = [name for name, grade in student_grades.items() if grade > 85]
+print("Students with grades higher than 85:", high_grades_students)
